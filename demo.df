@@ -1,0 +1,29 @@
+// This is a comment
+/* This is a multi-line comment */
+
+// Welcome to the global scope!
+
+let pi int = 3.14               // Immutability by default
+let mut x = 1 + 2 * 3 - 4 / 10  // Type inference  
+
+if x > 100 {
+  println("x > 100")
+} else if x < 100 {
+  println("x < 100")
+} else {
+  println("I guess x is 100 :)")
+}
+
+let message string = "Enter username: "
+
+println(message)
+let mut username string = input()
+
+for c in username {
+  print(c)
+}
+
+match username {
+  "remy" => println("Wow! Welcome Remy!")
+    _ => println("Nuh uh")
+}
